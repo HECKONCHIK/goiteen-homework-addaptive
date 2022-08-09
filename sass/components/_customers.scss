@@ -1,0 +1,31 @@
+.customers {
+    display: flex;
+}
+
+.customers-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.customers-link {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    @include centeredFlex (center);
+
+    width: 170px;
+    height: 90px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+
+    color: var(--svg);
+}
+
+.customers-link:hover,
+.customers-link:focus {
+    border: 1px solid var(--acent-color);
+    color: var(--acent-color);
+}
+
+.customers-icon {
+    fill: currentColor;
+}

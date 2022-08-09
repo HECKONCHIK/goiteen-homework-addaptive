@@ -1,0 +1,21 @@
+    .image {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .img-description {
+        position: relative;
+        background-color: rgba(47, 48, 58, 0.8);
+        width: 370px;
+        height: 65px;
+        bottom: 19%;
+    }
+
+    .text-description {
+        position: absolute;
+        transform: translate(54%, 72%);
+        color: var(--background-icons);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 0.9;
+    }

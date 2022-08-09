@@ -1,0 +1,39 @@
+/* primery-text-color: color: #212121
+text-color: color: #757575
+secondary-color: color: #ffffff
+link-color: color: rgba(255, 255, 255, 0.6)
+secondary-link-color: color: #2196F3
+background-color: background-color: #2F303A */
+
+/* WebStudio */
+@import "./veriabels/_variables.scss";
+@import "./utils/utils";
+@import "./components/common";
+
+    /* headear */
+@import "./components/header";
+    /* Секція герой */
+@import "./components/hero";
+    /* Модальне вікно */
+@import "./components/modal";
+    /* Форма */
+@import "./components/form";
+    /* Секція особливості */
+@import "./components/visually-hidden";
+@import "./components/features";
+    /* Секція чим займаємось */
+@import "./components/what-do-we-do";
+    /* Секція знайомства */
+@import "./components/our-team";
+    /* постійні клієнти */
+@import "./components/customers";
+    /* footer */
+@import "./components/footer";
+/* Portfolio */
+
+    /* Filter button */
+@import "./components/filter-button";
+    /* card */
+@import "./components/card";
+    /* Оверлей на карточках */
+@import "./components/ovelay-card";

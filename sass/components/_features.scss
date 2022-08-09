@@ -1,0 +1,53 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border: 0;
+    margin: -1px;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.specific-title {
+    color: var(--title-text-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.description-specific {
+    color: var(--primery-text-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.features-item {
+    width: 270px;
+}
+
+.featurs-icons {
+    background-color: var(--background-icons);
+
+    width: 270px;
+    height: 120px;
+
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    @include centeredFlex (center);
+
+    margin-bottom: 30px;
+}
