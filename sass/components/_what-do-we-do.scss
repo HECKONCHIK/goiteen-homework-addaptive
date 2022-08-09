@@ -1,3 +1,9 @@
+    .section.work {
+        padding: 0;
+        @media (max-width: 1199px) {
+            display: none;
+        }
+    }
     .image {
         display: flex;
         justify-content: space-between;

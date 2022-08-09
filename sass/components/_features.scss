@@ -29,13 +29,24 @@
 }
 
 .features {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
+    @media (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+    @media (min-width: $desktop) {
+        justify-content: space-between;
+    }
 }
 
 .features-item {
-    width: 270px;
+    @media (min-width: $tablet) {
+        width: calc((100% - 4 * 15px) /2);
+        margin: 15px;
+    }
+    @media (min-width: $desktop) {
+        width: 270px;
+    }
 }
 
 .featurs-icons {
