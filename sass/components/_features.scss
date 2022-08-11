@@ -39,7 +39,7 @@
     }
 }
 
-.features-item {
+.featurs-item {
     @media (min-width: $tablet) {
         width: calc((100% - 4 * 15px) /2);
         margin: 15px;
@@ -52,12 +52,8 @@
 .featurs-icons {
     background-color: var(--background-icons);
 
-    width: 270px;
     height: 120px;
 
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
     @include centeredFlex (center);
 
     margin-bottom: 30px;

@@ -534,20 +534,19 @@ ul {
 }
 
 @media (min-width: 768px) {
-  .features-item {
+  .featurs-item {
     width: calc((100% - 60px) / 2);
     margin: 15px;
   }
 }
 @media (min-width: 1200px) {
-  .features-item {
+  .featurs-item {
     width: 270px;
   }
 }
 
 .featurs-icons {
   background-color: var(--background-icons);
-  width: 270px;
   height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
