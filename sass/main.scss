@@ -6,7 +6,7 @@ secondary-link-color: color: #2196F3
 background-color: background-color: #2F303A */
 
 /* WebStudio */
-@import "./veriabels/_variables.scss";
+@import "./veriabels/variables";
 @import "./utils/utils";
 @import "./utils/mixins";
 @import "./veriabels/breakpoints";
@@ -14,7 +14,11 @@ background-color: background-color: #2F303A */
 
 @import "./components/flex-calc/calc";
     /* headear */
-@import "./components/header";
+@import "./components/header/header";
+@import "./components/header/logo";
+@import "./components/header/navigation";
+@import "./components/header/mobile-menu";
+@import "./components/header/header-contact";
     /* Секція герой */
 @import "./components/hero";
     /* Модальне вікно */

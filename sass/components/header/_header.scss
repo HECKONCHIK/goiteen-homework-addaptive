@@ -1,0 +1,23 @@
+    .header {
+        border-bottom: 1px solid rgba(236, 236, 236, 1);
+        margin-bottom: 100px;
+    }
+
+    .footer-contact:hover,
+    .footer-contact:focus {
+        color: var(--acent-color)
+    }
+    .list-item {
+        margin-right: 54px;
+    }
+
+    .list-item:last-child {
+        margin-right: 0;
+    }
+    .header-nav {
+        margin-bottom: 0;
+    }
+
+    .header-nav {
+        @include centeredFlex (flex-start);
+    }

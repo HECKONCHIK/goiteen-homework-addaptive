@@ -1,10 +1,13 @@
     .filter {
+        display: flex;
         @media (min-width: $mobile) {
-            display: flex;
             flex-wrap: wrap;
             margin-bottom: 40px;
             margin-top: -15px;
             margin-left: -8px;
+        }
+        @media (min-width: $tablet) {
+            justify-content: center;
         }
     }
     .filter-item {

@@ -1,0 +1,32 @@
+    .contact-list a {
+        color: var(--primery-text-color);
+
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+    }
+    .contact-list .nav-contact:focus,
+    .contact-list .nav-contact:hover {
+        color: var(--acent-color);
+        fill: var(--acent-color);
+    }
+    .contact-icon {
+        margin-right: 10px;
+        fill: currentColor;
+        
+        &:focus,
+        &:hover {
+            color: var(--acent-color);
+            fill: var(--acent-color);
+        }
+    }
+    .contact-list {
+        @include centeredFlex (flex-start);
+        margin-left: auto;
+    }
+    
+    .contact-list li+li {
+        margin-left: 50px;
+    }
