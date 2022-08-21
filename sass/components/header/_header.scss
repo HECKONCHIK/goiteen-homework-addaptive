@@ -3,12 +3,15 @@
         margin-bottom: 100px;
     }
 
-    .footer-contact:hover,
-    .footer-contact:focus {
-        color: var(--acent-color)
-    }
     .list-item {
-        margin-right: 54px;
+        @media (max-width: 767px) {
+            &:not(:last-child) {
+                margin-bottom: 32px;
+            }
+        }
+        @media (min-width: $tablet) {
+            margin-right: 54px;
+        }
     }
 
     .list-item:last-child {

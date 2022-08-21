@@ -1,11 +1,29 @@
-    .contact-list a {
-        color: var(--primery-text-color);
-
-        font-style: normal;
+.contacts {
+    @media (max-width: 767px) {
+        margin-bottom: 64px;
+    }
+    @media (min-width: $tablet) {
+        margin-left: 89px;
+    }
+}
+.contact-list a {
+    color: var(--primery-text-color);
+    @media (max-width: 767px) {
+        font-size: 24;
         font-weight: 500;
-        font-size: 14px;
         line-height: 1.1;
         letter-spacing: 0.02em;
+    }
+    @media (min-width: $tablet) {
+        
+    }
+    @media (min-width: $desktop) {
+        display: flex;
+        align-items: center;
+                
+        font-size: 14px;
+    }
+
     }
     .contact-list .nav-contact:focus,
     .contact-list .nav-contact:hover {
@@ -13,6 +31,9 @@
         fill: var(--acent-color);
     }
     .contact-icon {
+        @media (max-width: 767px) {
+            display: none;
+        }
         margin-right: 10px;
         fill: currentColor;
         
@@ -23,10 +44,24 @@
         }
     }
     .contact-list {
-        @include centeredFlex (flex-start);
-        margin-left: auto;
+        display: flex   ;
+        @media (max-width: 767px) {
+            flex-direction: column-reverse;
+        }
+        @media (min-width: $desktop) {
+                margin-left: auto;
+        }
+
+    }
+    .contact-item:last-child {
+        @media (max-width: 767px) {
+            font-size: 24px;
+            margin-bottom: 32px;
+        }
     }
     
     .contact-list li+li {
-        margin-left: 50px;
+        @media (min-width: $desktop) {
+            margin-left: 50px;
+        }
     }

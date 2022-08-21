@@ -32,6 +32,10 @@
 .footer-contacts {
     margin-right: 70px;
 }
+.footer-contact:hover,
+.footer-contact:focus {
+    color: var(--acent-color)
+}
 
 .footer-items {
     display: flex;

@@ -1,16 +1,21 @@
 .nav-list .nav-link {
-    position: relative;
-    display: block;
-
-    padding-top: 32px;
-    padding-bottom: 32px;
-
-    color: var(--primery-text-color);
-
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    color: #000;
+    @media (max-width: 767px) {
+        font-size: 40px;
+    }
+
+    @media (min-width: $tablet) {
+        display: block;
+            
+        padding-top: 32px;
+        padding-bottom: 32px;
+            
+        font-size: 14px;
+    }
 
     &:hover,
     &:focus {
@@ -32,11 +37,22 @@
 }
 .nav-list {
     display: flex;
-    margin-left: 93px;
+    @media (max-width: 767px) {
+        flex-direction: column;
+    }
+    @media (min-width: $tablet) {
+        margin-left: 90px;
+    }
+    @media (min-width: $desktop) {
+        margin-left: 93px;
+    }
 }
     
 .nav-list li+li {
-    margin-left: 54px;
+    @media (min-width: $tablet) {
+        margin-left: 54px;
+    }
+
 }
 .nav-list .nav-link.current {
     color: var(--acent-color);
