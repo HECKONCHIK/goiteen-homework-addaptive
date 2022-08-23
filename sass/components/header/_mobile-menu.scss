@@ -36,7 +36,7 @@
         }
 }
 .mobile-menu {
-    @media (max-width: 767px) {
+    @media screen and (max-width: 767px) {
     position: absolute;
     top: 0;
     left: 0;
@@ -51,16 +51,17 @@
     justify-content: space-between;
     padding: 48px 83px 48px 40px;
     z-index: 1;
+    
     &.is-open {
         display: flex;
     }
     }
-    @media screen and (min-width: $tablet) {
+    @media (min-width: $tablet) {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    @media screen and (min-width: $desktop) {
+    @media (min-width: $desktop) {
         align-items: baseline;
     }
 }

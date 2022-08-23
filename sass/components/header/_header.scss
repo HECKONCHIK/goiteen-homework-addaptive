@@ -12,13 +12,11 @@
         @media (min-width: $tablet) {
             margin-right: 54px;
         }
+
+        &:last-child {
+            margin-right: 0;
+        }
     }
 
-    .list-item:last-child {
-        margin-right: 0;
-    }
-    .header-nav {
-        margin-bottom: 0;
-        @include centeredFlex (flex-start);
-    }
+
 
